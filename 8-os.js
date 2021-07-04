@@ -1,0 +1,18 @@
+const os = require("os")
+
+//info about current user
+
+const user = os.userInfo()
+
+// methos returns the system uptime in seconds
+console.log("system uptime is:", os.uptime())
+
+
+const currentOS = {
+    name: os.type(),
+    release: os.release(),
+    totalMemory: os.totalmem(),
+    freeMemory: os.freemem()
+}
+
+console.log(currentOS)
